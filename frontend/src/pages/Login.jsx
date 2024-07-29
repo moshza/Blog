@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link,useNavigate } from 'react-router-dom'
 import axios from 'axios';
 import { AuthContext } from '../context/authContext';
+import blog from '../images/blog.png'
 
 const Login = () => {
   const [inputs,setInputs] = useState({
@@ -32,6 +33,9 @@ const Login = () => {
   }
   return (
     <div className='auth'>
+      <div className='logo'>
+        <img src={blog} alt="" />
+      </div>
         <h1>Login</h1>
         <form >
             <input type="text" name='username' placeholder='username' onChange={handleChange}/>

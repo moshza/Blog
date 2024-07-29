@@ -1,4 +1,5 @@
 $lightBlue : #d1d6e5;
+$teal: teal;
 
 .app {
     display: flex;
@@ -11,6 +12,11 @@ $lightBlue : #d1d6e5;
             color: inherit;
         }
         //Register & Login
+        .logo{
+            img{
+                width: 150px;
+            }
+        }
         .auth{
             display: flex;
             flex-direction: column;
@@ -21,7 +27,7 @@ $lightBlue : #d1d6e5;
 
             h1{
                 font-size: 20px;
-                color: teal;
+                color: $teal;
                 margin-bottom: 20px;
             }
 
@@ -42,9 +48,13 @@ $lightBlue : #d1d6e5;
                 button{
                     padding: 10px;
                     border: none;
-                    background-color: teal;
+                    background-color: $teal;
                     color: #fff;
                     cursor: pointer;
+
+                    &:hover{
+                        filter: brightness(90%);
+                    }
                 }
 
                 p{
@@ -56,6 +66,21 @@ $lightBlue : #d1d6e5;
                 span{
                    font-style: 12px;
                    text-align: center; 
+                }
+
+                label{
+                    font-size: 12px;
+                    cursor: pointer;
+
+                    &::before{
+                        content: "\1F4F8";
+                        margin: 4px;
+                    }
+
+                    &:hover{
+                        filter: brightness(80%);
+                        color: $teal;
+                    }
                 }
             }
         }
@@ -81,18 +106,18 @@ $lightBlue : #d1d6e5;
                         font-weight: 300;
 
                         &:hover {
-                            border-bottom: 3px solid teal;
+                            border-bottom: 3px solid $teal;
                         }
                     }
 
                     .username-span{
                         cursor: pointer;
-                        color: teal;
+                        color: $teal;
                     }
 
                     .logout-span{
                         cursor: pointer;
-                        color: teal;
+                        color: $teal;
 
                         &:hover{
                             filter: brightness(60%);
@@ -111,9 +136,9 @@ $lightBlue : #d1d6e5;
                         border: 1px solid white;
 
                         &:hover{
-                            color: teal;
+                            color: $teal;
                             background-color: #fff;
-                            border: 1px solid teal;
+                            border: 1px solid $teal;
                         }
                     }
                 }
@@ -135,7 +160,7 @@ $lightBlue : #d1d6e5;
             }
 
             strong{
-                color: teal;
+                color: $teal;
                 font-size: 16px;
             }
         }
@@ -198,8 +223,8 @@ $lightBlue : #d1d6e5;
                         border: none;
                         cursor: pointer;
                         background-color: #fff;
-                        border: 1px solid teal;
-                        color: teal;
+                        border: 1px solid $teal;
+                        color: $teal;
 
                         &:hover{
                             border: 1px solid white;
@@ -307,8 +332,8 @@ $lightBlue : #d1d6e5;
                         border: none;
                         cursor: pointer;
                         background-color: #fff;
-                        border: 1px solid teal;
-                        color: teal;
+                        border: 1px solid $teal;
+                        color: $teal;
 
                         &:hover{
                             border: 1px solid white;
@@ -381,16 +406,16 @@ $lightBlue : #d1d6e5;
 
                         :first-child{
                             cursor: pointer;
-                            color: teal;
+                            color: $teal;
                             background-color: #fff;
-                            border: 1px solid teal;
+                            border: 1px solid $teal;
                             padding: 3px 5px;
                         }
                         :last-child{
                             cursor: pointer;
                             color: #fff;
-                            background-color: teal;
-                            border: 1px solid teal;
+                            background-color: $teal;
+                            border: 1px solid $teal;
                             padding: 3px 5px;
                         }
                     }
@@ -399,7 +424,7 @@ $lightBlue : #d1d6e5;
                        display: flex;
                        align-items: center;
                        gap: 2px;
-                       color: teal; 
+                       color: $teal; 
 
                        label{
                         text-decoration: none;

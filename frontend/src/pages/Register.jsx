@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import blog from '../images/blog.png'
 
 const Register = () => {
   const [inputs,setInputs] = useState({
@@ -44,6 +45,9 @@ const Register = () => {
 
   return (
     <div className='auth'>
+      <div className='logo'>
+        <img src={blog} alt="" />
+      </div>
         <h1>Register</h1>
         <form >
             <input type="text" name='username' placeholder='username' required onChange={handleChange}/>
